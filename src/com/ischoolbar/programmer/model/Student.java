@@ -15,7 +15,7 @@ public class Student {
 	private int clazzId; //班级
 	private String sex = "男"; //性别
 	private String mobile;  //手机号码
-	private String qq; //qq
+	private String qq; //  qq
 	private InputStream photo;//头像
 	private String height; //学生身高
 	private String weight; //学生体重

@@ -46,7 +46,7 @@
  						}
  					}	
  		       	},
- 		       	{field:'info',title:'请假原因',width:400},
+ 		       	{field:'info',title:'外出原因',width:400},
  		        {field:'status',title:'状态',width:80,
  		       	formatter: function(value,row,index){
 						switch(row.status){
@@ -460,9 +460,9 @@
 	    			</td>
 	    		</tr>
 	    		<tr>
-	    			<td>请假原因:</td>
+	    			<td>外出原因:</td>
 	    			<td>
-	    				<textarea id="info" name="info" style="width: 300px; height: 160px;" class="easyui-textbox" data-options="multiline:true,required:true, missingMessage:'请假原因不能为空'" ></textarea>
+	    				<textarea id="info" name="info" style="width: 300px; height: 160px;" class="easyui-textbox" data-options="multiline:true,required:true, missingMessage:'外出原因不能为空'" ></textarea>
 	    			</td>
 	    		</tr>
 	    	</table>
@@ -480,9 +480,9 @@
 	    			</td>
 	    		</tr>
 	    		<tr>
-	    			<td>请假原因:</td>
+	    			<td>外出原因:</td>
 	    			<td>
-	    				<textarea id="edit_info" name="info" style="width: 300px; height: 160px;" class="easyui-textbox" data-options="multiline:true,required:true, missingMessage:'请假原因不能为空'" ></textarea>
+	    				<textarea id="edit_info" name="info" style="width: 300px; height: 160px;" class="easyui-textbox" data-options="multiline:true,required:true, missingMessage:'外出原因不能为空'" ></textarea>
 	    			</td>
 	    		</tr>
 	    	</table>

@@ -134,7 +134,7 @@
   </servlet-mapping>
   
   <servlet>
-  	<description>请假信息管理</description>
+  	<description>外出信息管理</description>
   	<servlet-name>LeaveServlet</servlet-name>
   	<servlet-class>com.ischoolbar.programmer.servlet.LeaveServlet</servlet-class>
   </servlet>
@@ -144,7 +144,7 @@
   </servlet-mapping>
   
   <servlet>
-  	<description>请假信息管理</description>
+  	<description>外出信息管理</description>
   	<servlet-name>ScoreServlet</servlet-name>
   	<servlet-class>com.ischoolbar.programmer.servlet.ScoreServlet</servlet-class>
   </servlet>

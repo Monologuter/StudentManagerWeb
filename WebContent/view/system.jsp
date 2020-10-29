@@ -53,7 +53,7 @@
 									{"menuid":"81","menuname":"考勤列表","icon":"icon-book-open","url":"AttendanceServlet?method=toAttendanceServletListView"},
 								]
 						},
-						{"menuid":"9","icon":"","menuname":"请假信息管理",
+						{"menuid":"9","icon":"","menuname":"外出信息管理",
 							"menus":[
 									{"menuid":"91","menuname":"请假列表","icon":"icon-book-open","url":"LeaveServlet?method=toLeaveServletListView"},
 								]

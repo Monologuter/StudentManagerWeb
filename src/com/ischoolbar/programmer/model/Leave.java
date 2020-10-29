@@ -1,4 +1,7 @@
 package com.ischoolbar.programmer.model;
+
+import com.sun.javafx.binding.StringFormatter;
+
 /**
  * 请假表实体类
  * @author llq
@@ -14,6 +17,8 @@ public class Leave {
 	private String info;//请假理由
 	private int status = LEAVE_STATUS_WAIT;//请假条状态
 	private String remark;//批复内容
+	private String leavetime;  //外出时间
+	private String returntime;  //返回时间
 	public int getId() {
 		return id;
 	}
@@ -44,5 +49,19 @@ public class Leave {
 	public void setRemark(String remark) {
 		this.remark = remark;
 	}
+	public String getLeavetime() {
+		return leavetime;
+	}
+	public void setLeavetime(String leavetime) {
+		this.leavetime = leavetime;
+	}
+	public String getReturntime() {
+		return returntime;
+	}
+	public void setReturntime(String returntime) {
+		this.returntime = returntime;
+	}
+	
+	
 	
 }

@@ -20,6 +20,7 @@ import com.ischoolbar.programmer.model.Course;
 import com.ischoolbar.programmer.model.Leave;
 import com.ischoolbar.programmer.model.Page;
 import com.ischoolbar.programmer.model.Student;
+import com.sun.javafx.binding.StringFormatter;
 
 public class LeaveServlet extends HttpServlet {
 
@@ -77,10 +78,14 @@ public class LeaveServlet extends HttpServlet {
 		int id = Integer.parseInt(request.getParameter("id"));
 		int status = Integer.parseInt(request.getParameter("status"));
 		String info = request.getParameter("info");
+		String leavetime = request.getParameter("leavetime");
+		String returntime = request.getParameter("returntime");
 		String remark = request.getParameter("remark");
 		Leave leave = new Leave();
 		leave.setStudentId(studentId);
 		leave.setInfo(info);
+		leave.setLeavetime(leavetime);
+		leave.setReturntime(returntime);
 		leave.setRemark(remark);
 		leave.setStatus(status);
 		leave.setId(id);
@@ -104,9 +109,13 @@ public class LeaveServlet extends HttpServlet {
 		int studentId = Integer.parseInt(request.getParameter("studentid"));
 		int id = Integer.parseInt(request.getParameter("id"));
 		String info = request.getParameter("info");
+		String leavetime = request.getParameter("leavetime");
+		String returntime = request.getParameter("returntime");
 		Leave leave = new Leave();
 		leave.setStudentId(studentId);
 		leave.setInfo(info);
+		leave.setLeavetime(leavetime);
+		leave.setReturntime(returntime);
 		leave.setRemark("");
 		leave.setStatus(Leave.LEAVE_STATUS_WAIT);
 		leave.setId(id);
@@ -164,9 +173,13 @@ public class LeaveServlet extends HttpServlet {
 		// TODO Auto-generated method stub
 		int studentId = Integer.parseInt(request.getParameter("studentid"));
 		String info = request.getParameter("info");
+		String leavetime = request.getParameter("leavetime");
+		String returntime = request.getParameter("returntime");
 		Leave leave = new Leave();
 		leave.setStudentId(studentId);
 		leave.setInfo(info);
+		leave.setLeavetime(leavetime);
+		leave.setReturntime(returntime);
 		leave.setRemark("");
 		LeaveDao leaveDao = new LeaveDao();
 		String msg = "error";

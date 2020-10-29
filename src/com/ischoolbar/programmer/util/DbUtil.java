@@ -13,9 +13,9 @@ import javax.management.loading.PrivateClassLoader;
  */
 public class DbUtil {
 
-	private String dbUrl = "jdbc:mysql://localhost:3307/db_student_manager_web?useUnicode=true&characterEncoding=utf8";
-	private String dbUser = "root";
-	private String dbPassword = "123456";
+	private String dbUrl = "jdbc:mysql://rm-uf6rwf8hb58nl4o893o.mysql.rds.aliyuncs.com:3306/db_student_manager_web?useUnicode=true&characterEncoding=utf8";
+	private String dbUser = "cyy";
+	private String dbPassword = "Cyy19970306";
 	private String jdbcName = "com.mysql.jdbc.Driver";
 	private Connection connection = null;
 	public Connection getConnection(){

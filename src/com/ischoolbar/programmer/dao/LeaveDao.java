@@ -22,7 +22,7 @@ public class LeaveDao extends BaseDao {
 	 * @return
 	 */
 	public boolean addLeave(Leave leave){
-		String sql = "insert into s_leave values(null,"+leave.getStudentId()+",'"+leave.getInfo()+"',"+Leave.LEAVE_STATUS_WAIT+",'"+leave.getRemark()+"')";
+		String sql = "insert into s_leave values(null,"+leave.getStudentId()+",'"+leave.getInfo()+"',"+leave.getLeavetime()+"',"+leave.getReturntime()+"'," +Leave.LEAVE_STATUS_WAIT+",'"+leave.getRemark()+"')";
 		return update(sql);
 	}
 	
@@ -32,7 +32,7 @@ public class LeaveDao extends BaseDao {
 	 * @return
 	 */
 	public boolean editLeave(Leave leave){
-		String sql = "update s_leave set student_id = "+leave.getStudentId()+", info = '"+leave.getInfo()+"',status = "+leave.getStatus()+",remark = '"+leave.getRemark()+"' where id = " + leave.getId();
+		String sql = "update s_leave set student_id = "+leave.getStudentId()+", info = '"+leave.getInfo()+"', leavetime='"+leave.getLeavetime()+"', returntime='"+leave.getReturntime()+"' status = "+leave.getStatus()+",remark = '"+leave.getRemark()+"' where id = " + leave.getId();
 		return update(sql);
 	}
 	
@@ -67,6 +67,8 @@ public class LeaveDao extends BaseDao {
 				l.setId(resultSet.getInt("id"));
 				l.setStudentId(resultSet.getInt("student_id"));
 				l.setInfo(resultSet.getString("info"));
+				l.setLeavetime(resultSet.getString("leavetime"));
+				l.setReturntime(resultSet.getString("returntime"));
 				l.setStatus(resultSet.getInt("status"));
 				l.setRemark(resultSet.getString("remark"));
 				ret.add(l);
